@@ -25,6 +25,7 @@ gem 'will_paginate', '~> 3.1.0'
 # powerful for autentication
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
+gem 'iex-ruby-client'
 
 
 # Use Active Storage variant
