@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 3.1.0'
 
+# powerful for autentication
+gem 'devise'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -40,9 +43,10 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-group :production do
-  gem 'pg'
-end
+# for production purposes
+# group :production do
+#   gem 'pg'
+# end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
