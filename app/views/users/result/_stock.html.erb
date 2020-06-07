@@ -9,7 +9,6 @@
         <b>Price : </b> <%= @stock.last_price %>
         <% if current_user.can_track_stock?(@stock.ticker) %>
             <%= link_to 'Add to portofolio', user_stocks_path(user: current_user, ticker: @stock.ticker.upcase), class: "btn btn-xs btn-success", method: :POST%>
-        <% else %>
             <span class="badge badge-dark">
                 You are already tracking
                 <% if !current_user.under_stock_limit? %>
