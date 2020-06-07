@@ -45,10 +45,6 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-# for production purposes
-# group :production do
-#   gem 'pg'
-# end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
@@ -56,6 +52,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+end
+
+# for production purposes
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
