@@ -30,6 +30,11 @@
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
+            <ul class="navbar-nav ml-auto text-light">
+              <li class="nav-item mr-4">
+               <%= fa_icon 'user' %> <%= current_user.full_name %>
+              </li>
+            </ul>
             <div class="">
               <form class="form-inline my-2 my-lg-0">
                 <%= link_to 'Log out', destroy_user_session_path, method: :DELETE, class: "btn btn-danger mr-2" %>
