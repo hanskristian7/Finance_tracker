@@ -7,18 +7,18 @@ class StocksController < ApplicationController
             if @stock
                 respond_to do |format|
                     # expecting partial js file
-                    format.js { render partial: 'users/result' }
+                    format.js { render partial: 'users/result/stock' }
                 end
             else
                 respond_to do |format|
                     flash.now[:alert] = "Please enter a valid symbol"
-                    format.js { render partial: 'users/result' }
+                    format.js { render partial: 'users/result/stock' }
                 end
             end 
         else
             respond_to do |format|
                 flash.now[:alert] = "Please enter symbol to search"
-                format.js { render partial: 'users/result' }
+                format.js { render partial: 'users/result/stock' }
             end
         end
     end
